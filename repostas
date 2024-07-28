@@ -1,0 +1,28 @@
+1. Explique o que são os princípios SOLID e como cada um deles pode ser aplicado em um projeto desenvolvido em .NET.
+- Os princípios SOLID são um conjunto de condutas utilizadas para criação de softwares de qualidade , garantindo também que ele seja flexível ,robusto e de fácil manutenção , cada um dos princípios ajuda numa padronização no design dos projetos .net , O S - Single Responsibility Principle  –  Garante que as classes criadas nos projetos .net tenham apenas funções únicas e não acumulem funções desnecessárias pra classe e garantindo uma fácil manutenção do código, já o O -  Open Closed Principle – fala  que as classe e métodos sejam abertas para extensão e fechadas para modificação , garantindo um código mais legível e de fácil manutenção , pois ao adicionarmos nova funcionalidades , não precisaríamos mexer na classe ,mas sim extender e criar essa função somente na classe especifica, assim impedindo a quebra do sistemas por conta de modificações na classe, o L – Liskov Substitution Principle – diz que as sub-Classes podem substituir as classes mães , garante que a sub-classes não se distancie muitos das classes base. – O I -Interface Segregation Principle -diz que uma classe não deve implementar interface e métodos que não vão usar , com esse principio podemos criar interface especificas ,assim melhorando na manutenção do código e tornando o sistemas mais flexível, O D – Dependency Inversion Principle – Diz que módulos de alto nível não devem depender dos módulos de baixo-nivel, ambos devem depender de abstrações , assim tornando mais fácil fazer teste de unidades e códigos mais robustos e duradouros.
+
+
+2. Quais são os principais padrões de arquitetura de software utilizados em aplicações .NET? Descreva dois desses padrões e seus benefícios.
+Arquitetura em Camadas (Layered Architecture)
+Arquitetura MVC (Model-View-Controller)
+Arquitetura MVP (Model-View-Presenter)
+Arquitetura Microservices
+Arquitetura de Clean Architecture
+
+Arquitetura em Camadas  – essa arquitetura organiza o sistema em camadas especificas ,onde cada camada tem uma responsabilidade.
+Benefícios:
+•	Facilita a manutenção do código 
+•	Agiliza o desenvolvimento do sistemas
+•	Promove uma abstração maior do sistema
+Arquitetura Microservices   -   Essa arquitetura permite que um sistema seja dividido em vários serviços menores, todos independentes, cada serviço é robusto, flexível e autônomo, onde ele se comunicam por meio de APIs.
+Benefícios: 
+•	Reutilização de serviços 
+•	Escalabilidade Independente
+•	Desenvolvimento independente
+•	Utilização de varias tecnologias
+
+3. Por que é importante separar a lógica de negócios da lógica de apresentação em uma aplicação .NET? Como isso pode ser alcançado?
+É importante pois facilita na manutenção do código, com a separação é se for preciso fazer uma modificação de na logica de negócios isso não ira interferir no logica de apresentação , isso torna também o código reutilizável, facilita os teste, Torna o código mais organizado e outro ponto muito importante é a segurança , a separação pode ajudar na proteção de dados e de processos críticos.
+Isso pode ser alcançado utilizando o padrão de arquitetura MVC, com essa arquitetura é possível organizar e separas a logicas, no model representa a logica e de negócios e o view a de apresentação e controller ficar responsável pelo interação entre os dois .
+ 
+
